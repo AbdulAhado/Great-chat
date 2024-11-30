@@ -1,0 +1,31 @@
+.chat{
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(129,195,247,1) 0%, rgba(158,209,237,1) 100%);
+    display: grid;
+    place-items: center;
+    animation-name: leRotateIn;
+}
+@keyframes leRotateIn {
+    from {
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+    to { opacity: 1 }
+}
+
+.chat-container{
+    width: 95%;
+    height: 75vh;
+    max-width: 1000px;
+    background: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.loading{
+    font-size: 50px;
+    color: white;
+   border: 5px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    background: transparent;
+}
